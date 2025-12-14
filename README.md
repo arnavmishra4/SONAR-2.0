@@ -396,10 +396,10 @@ If you use SONAR 2.0 in your research, please cite:
 
 ```bibtex
 @software{sonar2_2024,
-  author = {Your Name},
+  author = Arnav Mishra,
   title = {SONAR 2.0: Multi-Model Ensemble for Archaeological Site Detection},
-  year = {2024},
-  publisher = {GitHub},
+  year = {2025},
+  publisher = {https://github.com/arnavmishra4},
   url = {https://github.com/yourusername/SONAR-2.0-Archaeological-Detection},
   note = {Deep learning pipeline for detecting archaeological sites from geospatial data}
 }
