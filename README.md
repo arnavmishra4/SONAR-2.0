@@ -7,7 +7,7 @@
 
 > **Automated detection of archaeological sites from multi-source geospatial data using deep learning ensemble with GATE meta-learner**
 
-![Banner](docs/banner.png)
+![Banner](https://drive.google.com/uc?export=view&id=1wBa_k9YPdpxKBSp85iqtVq07bW1yXDhW)
 
 ---
 
