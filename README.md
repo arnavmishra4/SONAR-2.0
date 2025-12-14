@@ -3,7 +3,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![HuggingFace](https://img.shields.io/badge/🤗-Demo-yellow.svg)](YOUR_HUGGINGFACE_SPACE_LINK)
+[![HuggingFace]([https://img.shields.io/badge/🤗-Demo-yellow.svg](https://huggingface.co/spaces/arnavmishra4/SONAR?logs=container))](YOUR_HUGGINGFACE_SPACE_LINK)
 
 > **Automated detection of archaeological sites from multi-source geospatial data using deep learning ensemble with GATE meta-learner**
 
@@ -78,7 +78,7 @@ SONAR 2.0 enables:
 
 ### Complete Pipeline Flow
 
-![System Architecture](https://drive.google.com/uc?export=view&id=1wBa_k9YPdpxKBSp85iqtVq07bW1yXDhW)
+![System Architecture](https://drive.google.com/file/d/1wBa_k9YPdpxKBSp85iqtVq07bW1yXDhW/view?usp=sharing)
 
 ---
 
