@@ -3,7 +3,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![HuggingFace]([https://img.shields.io/badge/🤗-Demo-yellow.svg](https://huggingface.co/spaces/arnavmishra4/SONAR?logs=container))](YOUR_HUGGINGFACE_SPACE_LINK)
+[![HuggingFace](https://img.shields.io/badge/🤗-Demo-yellow.svg)](YOUR_HUGGINGFACE_SPACE_LINK)
 
 > **Automated detection of archaeological sites from multi-source geospatial data using deep learning ensemble with GATE meta-learner**
 
@@ -78,7 +78,9 @@ SONAR 2.0 enables:
 
 ### Complete Pipeline Flow
 
-![System Architecture](https://drive.google.com/file/d/1wBa_k9YPdpxKBSp85iqtVq07bW1yXDhW/view?usp=sharing)
+![System Architecture](https://drive.google.com/uc?export=view&id=1wBa_k9YPdpxKBSp85iqtVq07bW1yXDhW)
+
+> **Note:** If the image above doesn't display, the Google Drive file may need public sharing enabled. Go to Google Drive → Right-click the file → Share → Change to "Anyone with the link can view"
 
 ---
 
@@ -432,26 +434,6 @@ Please respect the licenses of these data sources.
 - **Archaeological Domain Experts**: For validating reference sites and providing ground truth
 - **Open Source Community**: PyTorch, Scikit-learn, Rasterio contributors
 - **Compute Resources**: [Institution/Cloud provider if applicable]
-
----
-
-## 📧 Contact
-
-**Your Name**  
-🎓 [Your University/Organization]  
-📧 Email: your.email@example.com  
-🔗 LinkedIn: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)  
-🐦 Twitter: [@yourhandle](https://twitter.com/yourhandle)  
-💼 Portfolio: [yourwebsite.com](https://yourwebsite.com)
-
----
-
-## 🔗 Links
-
-- 🤗 **[Live Demo on HuggingFace](YOUR_HUGGINGFACE_SPACE_LINK)** - Try it yourself!
-- 📦 **[Model Weights on HuggingFace Hub](YOUR_MODEL_HUB_LINK)**
-- 📊 **[Project Paper/Thesis](YOUR_PAPER_LINK)** *(if available)*
-- 🎥 **[Demo Video](YOUR_VIDEO_LINK)** *(if available)*
 
 ---
 
