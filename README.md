@@ -395,7 +395,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 If you use SONAR 2.0 in your research, please cite:
 
 ```bibtex
-@software{sonar2_2024,
+@software{sonar2_2025,
   author = Arnav Mishra,
   title = {SONAR 2.0: Multi-Model Ensemble for Archaeological Site Detection},
   year = {2025},
@@ -404,11 +404,6 @@ If you use SONAR 2.0 in your research, please cite:
   note = {Deep learning pipeline for detecting archaeological sites from geospatial data}
 }
 ```
-
-### Related Publications
-
-*Add any papers, theses, or conference presentations here*
-
 ---
 
 ## 📄 License
@@ -418,9 +413,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ### Third-Party Data Sources
 
 - **LiDAR Data**: [NASA GEDI](https://gedi.umd.edu/) / [OpenTopography](https://opentopography.org/)
-- **Sentinel-2**: [Copernicus Open Access Hub](https://scihub.copernicus.eu/)
+- **Satellite**: [Copernicus Open Access Hub](https://earthengine.google.com)
 - **HydroSHEDS**: [WWF / USGS](https://www.hydrosheds.org/)
-
 Please respect the licenses of these data sources.
 
 ---
@@ -429,7 +423,6 @@ Please respect the licenses of these data sources.
 
 - **Archaeological Domain Experts**: For validating reference sites and providing ground truth
 - **Open Source Community**: PyTorch, Scikit-learn, Rasterio contributors
-- **Compute Resources**: [Institution/Cloud provider if applicable]
 
 ---
 
