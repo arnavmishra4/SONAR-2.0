@@ -7,8 +7,6 @@
 
 > **Automated detection of archaeological sites from multi-source geospatial data using deep learning ensemble with GATE meta-learner**
 
-![Banner](https://drive.google.com/uc?export=view&id=1wBa_k9YPdpxKBSp85iqtVq07bW1yXDhW)
-
 ---
 
 ## 📋 Table of Contents
@@ -79,8 +77,6 @@ SONAR 2.0 enables:
 ### Complete Pipeline Flow
 
 ![System Architecture](https://drive.google.com/uc?export=view&id=1wBa_k9YPdpxKBSp85iqtVq07bW1yXDhW)
-
-> **Note:** If the image above doesn't display, the Google Drive file may need public sharing enabled. Go to Google Drive → Right-click the file → Share → Change to "Anyone with the link can view"
 
 ---
 
