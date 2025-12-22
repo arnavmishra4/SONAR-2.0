@@ -400,7 +400,7 @@ If you use SONAR 2.0 in your research, please cite:
   title = {SONAR 2.0: Multi-Model Ensemble for Archaeological Site Detection},
   year = {2025},
   publisher = {https://github.com/arnavmishra4},
-  url = {https://github.com/yourusername/SONAR-2.0-Archaeological-Detection},
+  url = {https://huggingface.co/spaces/arnavmishra4/SONAR},
   note = {Deep learning pipeline for detecting archaeological sites from geospatial data}
 }
 ```
