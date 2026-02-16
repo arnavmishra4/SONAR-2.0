@@ -1,0 +1,6 @@
+AOI_ID: AOI_0004
+LiDAR_File: ANA_A01_2017_laz_12.laz
+min_lon: -54.992912
+min_lat: -3.381571
+max_lon: -54.986568
+max_lat: -3.372516

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-body: 'Inter', sans-serif;
+  --font-display: 'Libre Baskerville', serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Earth Tones Palette - Archaeology meets Tech */
+  --background: 40 20% 96%;        /* Light Sand */
+  --foreground: 24 10% 10%;        /* Dark Soil */
+  
+  --primary: 34 57% 30%;           /* Deep Clay/Leather */
+  --primary-foreground: 40 20% 96%;
+  
+  --secondary: 40 30% 90%;         /* Pale Parchment */
+  --secondary-foreground: 24 10% 10%;
+  
+  --muted: 40 10% 88%;             /* Muted Stone */
+  --muted-foreground: 24 10% 40%;  /* Old Ink */
+  
+  --accent: 45 100% 50%;           /* Gold/Amber (Tech Accent) */
+  --accent-foreground: 24 10% 10%;
+  
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 34 20% 80%;            /* Faded Map Line */
+  --input: 34 20% 80%;
+  --ring: 34 57% 30%;
+
+  --radius: 0.5rem;
+}
+
+.dark {
+  /* Dark mode - Night Excavation */
+  --background: 24 10% 10%;        /* Deep Cave */
+  --foreground: 40 20% 90%;        /* Light Sand */
+  
+  --primary: 34 40% 45%;           /* Terracotta */
+  --primary-foreground: 24 10% 10%;
+  
+  --secondary: 24 15% 18%;         /* Dark Rock */
+  --secondary-foreground: 40 20% 90%;
+  
+  --muted: 24 15% 18%;
+  --muted-foreground: 40 10% 60%;
+  
+  --accent: 45 100% 50%;           /* Gold/Amber Light */
+  --accent-foreground: 24 10% 10%;
+  
+  --destructive: 0 62% 30%;
+  --destructive-foreground: 0 0% 98%;
+  
+  --border: 24 15% 25%;
+  --input: 24 15% 25%;
+  --ring: 34 40% 45%;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-body);
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23a0522d' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    @apply font-bold tracking-tight text-primary;
+  }
+  
+  /* For tech readouts/stats */
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+}
+
+/* Custom Utilities */
+.glass-panel {
+  @apply bg-background/80 backdrop-blur-md border border-border shadow-lg;
+}
+
+.map-grid-bg {
+  background-image: 
+    linear-gradient(rgba(160, 82, 45, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(160, 82, 45, 0.1) 1px, transparent 1px);
+  background-size: 40px 40px;
+}

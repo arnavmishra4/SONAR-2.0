@@ -1,0 +1,70 @@
+services:
+
+  python_api:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    container_name: sonar_python_api
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - uploads_data:/app/uploads
+    expose:
+      - "8000"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    networks:
+      - sonar_net
+
+  nodejs:
+    build:
+      context: .
+      dockerfile: Dockerfile.node
+    container_name: sonar_nodejs
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+      - PORT=5000
+    expose:
+      - "5000"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+    networks:
+      - sonar_net
+
+  nginx:
+    image: nginx:1.27-alpine
+    container_name: sonar_nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/sonar.conf:ro
+      - /etc/letsencrypt:/etc/letsencrypt:ro
+      - /var/www/certbot:/var/www/certbot:ro
+      - nginx_logs:/var/log/nginx
+    depends_on:
+      python_api:
+        condition: service_healthy
+      nodejs:
+        condition: service_healthy
+    networks:
+      - sonar_net
+
+volumes:
+  uploads_data:
+  nginx_logs:
+
+networks:
+  sonar_net:
+    driver: bridge

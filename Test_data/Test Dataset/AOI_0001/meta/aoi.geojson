@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "aoi",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "aoi_id": "AOI_0001", "lidar_file": "ANA_A01_2017_laz_1.laz" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -55.00194596, -3.354481763 ], [ -55.00194596, -3.347678858 ], [ -55.01009295, -3.347678858 ], [ -55.01009295, -3.354481763 ], [ -55.00194596, -3.354481763 ] ] ] } }
+]
+}
